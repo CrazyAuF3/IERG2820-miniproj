@@ -1,0 +1,32 @@
+# Quartus-generated build artifacts
+/db/
+/incremental_db/
+/output_files/
+*.rpt
+*.summary
+*.smsg
+*.done
+*.pin
+*.jdi
+*.pof
+*.sof
+*.qws
+
+# ModelSim/Questa and Icarus Verilog generated files
+/work/
+/simulation/modelsim/
+transcript
+vsim.wlf
+*.vcd
+*.vvp
+*.lxt
+
+# Quartus and simulator temporary files
+*.bak
+*.orig
+*.swp
+*.swo
+.svw_history
+
+# Operating-system metadata
+.DS_Store
