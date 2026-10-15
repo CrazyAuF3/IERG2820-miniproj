@@ -6,12 +6,13 @@ module miniproj_tb;
     reg  [3:0]  TA;
     reg  [3:0]  TB;
     reg  [3:0]  TC;
+    reg  [3:0]  KA;
     reg         SW1;
     reg         SW2;
     reg         CLK;
 
     // ---- Outputs ----
-    wire [9:0]  LED;
+    wire [10:0]  LED;
     wire [7:0]  DIG1;
     wire [7:0]  DIG2;
     wire [16:0] DIG3;
@@ -19,7 +20,7 @@ module miniproj_tb;
     // ---- DUT ----
     miniproj dut (
         .TA(TA), .TB(TB), .TC(TC),
-        .SW1(SW1), .SW2(SW2),
+        .SW1(SW1), .SW2(SW2), .KA(KA),
         .CLK(CLK),
         .LED(LED), .DIG1(DIG1), .DIG2(DIG2), .DIG3(DIG3)
     );
