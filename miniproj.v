@@ -35,7 +35,7 @@ wire SW2_ne = SW2_last & ~SW2_new;
 // variables used in calculator mode
 reg display_mode = 0;  // 0 for operations, 1 for results
 wire hex_output = TC[1];
-wire operations = TC[3:2];
+wire [1:0] operations = TC[3:2];
 
 // mode indicator
 reg mode;  // 0 for calculator, 1 for ALU
